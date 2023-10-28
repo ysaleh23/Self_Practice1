@@ -73,8 +73,7 @@ public abstract class Car {
     @Override
     public String toString() {
         return getClass().getSimpleName() + "{" +
-                "make='" + make + '\'' +
-                ", model='" + model + '\'' +
+                "model='" + model + '\'' +
                 ", year=" + year +
                 ", price=" + price +
                 ", color='" + color + '\'' +
