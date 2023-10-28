@@ -35,18 +35,19 @@ public abstract class Car {
         this.color = color;
     }
 
+
     public Car(String make, String model, int year, double price, String color) {
-        if (make.isEmpty() || make.isBlank() || make == null) {
+        if (make.isEmpty()  || make == null) {
             System.err.println("Please enter a valid make " + getMake());
             System.exit(1);
         }
         this.make = make;
-        if (model.isEmpty() || model.isBlank() || model == null) {
+        if (model.isEmpty()  || model == null) {
             System.err.println("Please enter a valid model " + getModel());
             System.exit(1);
         }
             this.model = model;
-            if (year == 0 || year < 1886) {
+            if ( year < 1886) {
                 System.err.println("Invalid year, please enter a valid YEAR " + getYear());
                 System.exit(1);
             }

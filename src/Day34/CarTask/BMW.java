@@ -1,7 +1,7 @@
 package Day34.CarTask;
 
 public class BMW extends Car{
-    public BMW(String make, String model, int year, double price, String color) {
+    public BMW(String model, int year, double price, String color) {
         super("BMW", model, year, price, color);
     }
 
